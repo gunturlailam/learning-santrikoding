@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Integrasi dengan CSS Dasar</title>
-    <!-- external css -->
-    <link rel="stylesheet" href="style.css" />
+    <title>Integrasi dengan JavaScript Dasar</title>
   </head>
-  <!-- internal css -->
-  <!-- <style>
-    h1 {
-      color: darkgreen;
-      text-align: center;
-    }
-  </style> -->
   <body>
-    <!-- Cara menghubungkan css -->
-    <!-- inline css -->
-    <!-- <p style="color: blue; font-size: 18px">
-      Teks ini berwarna biru dan ukurannya 18px.
-    </p> -->
+    <!-- Inline JavaScript -->
+    <!-- <button onclick="alert('Halo teman-teman!')">Klik Aku</button> -->
 
-    <!-- elemen internal css & external css -->
-    <h1>Selamat Datang!</h1>
+    <!-- Internal JavaScript -->
+    <!-- <button id="tombol">Klik Aku</button> -->
+
+    <!-- <script>
+      const tombol = document.getElementById("tombol");
+      tombol.addEventListener("click", function () {
+        alert("Tombol diklik!");
+      });
+    </script>  -->
+
+    <!-- External JavaScript -->
+    <!-- <button id="tombol">Klik Aku</button>
+    <script src="script.js"></script> -->
+
+    <!-- Interaksi Dasar -->
+    <p id="pesan">Ini adalah teks yang bisa disembunyikan.</p>
+    <button onclick="document.getElementById('pesan').style.display = 'none'">
+      Sembunyikan
+    </button>
   </body>
 </html>
