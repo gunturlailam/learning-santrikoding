@@ -1,3 +1,20 @@
-p{
-    color: purple;
+/* Tag Selector */
+/* p{
+    color: blue;
+} */
+
+/* Class Selector */
+/* .teks-merah {
+    color: red;
+} */
+
+/* ID Selector */
+/* #judul-utama {
+    font-size: 32px;
+} */
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
 }

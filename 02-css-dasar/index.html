@@ -3,20 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cara Menambahkan CSS</title>
+    <title>Selector CSS</title>
     <!-- external css -->
     <link rel="stylesheet" href="style.css" />
-    <style>
-      p {
-        color: green;
-      }
-    </style>
   </head>
-  <body>
-    <!-- Inline CSS -->
-    <!-- <h1 style="color: red">Judul Merah</h1> -->
+  <style>
+    * {
+      font-family: Arial, sans-serif;
+    }
 
-    <!-- Internal CSS -->
-    <p>Paragraf hijau</p>
+    p {
+      color: blue;
+    }
+
+    .teks-merah {
+      color: red;
+    }
+
+    #judul-utama {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <!-- Tag Selector -->
+    <!-- <p>Ini paragraf biru</p>
+    <p>Ini juga biru</p> -->
+
+    <!-- Class Selector -->
+    <!-- <p class="teks-merah">Paragraf ini berwarna merah</p>
+    <span class="teks-merah">Span ini juga merah</span> -->
+
+    <!-- ID Selector -->
+    <!-- <h1 id="judul-utama">Ini adalah judul utama</h1> -->
+
+    <!-- Contoh Lengkap -->
+    <h1 id="judul-utama">Halo, Santri Koding!</h1>
+    <p>Ini paragraf berwarna biru.</p>
+    <p class="teks-merah">Ini paragraf berwarna merah.</p>
+    <span class="teks-merah">Ini juga teks merah.</span>
   </body>
 </html>
