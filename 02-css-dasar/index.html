@@ -3,44 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selector CSS</title>
-    <!-- external css -->
+    <title>Properti Dasar CSS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <style>
-    * {
-      font-family: Arial, sans-serif;
+    body {
+      background-color: #f9f9f9;
+      font-family: "Segoe UI", sans-serif;
+      color: #333;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 28px;
     }
 
     p {
-      color: blue;
+      font-size: 16px;
+      font-weight: normal;
     }
 
-    .teks-merah {
-      color: red;
-    }
-
-    #judul-utama {
-      font-size: 32px;
+    .highlight {
+      color: white;
+      background-color: #e74c3c;
       font-weight: bold;
     }
   </style>
   <body>
-    <!-- Tag Selector -->
-    <!-- <p>Ini paragraf biru</p>
-    <p>Ini juga biru</p> -->
-
-    <!-- Class Selector -->
-    <!-- <p class="teks-merah">Paragraf ini berwarna merah</p>
-    <span class="teks-merah">Span ini juga merah</span> -->
-
-    <!-- ID Selector -->
-    <!-- <h1 id="judul-utama">Ini adalah judul utama</h1> -->
-
-    <!-- Contoh Lengkap -->
-    <h1 id="judul-utama">Halo, Santri Koding!</h1>
-    <p>Ini paragraf berwarna biru.</p>
-    <p class="teks-merah">Ini paragraf berwarna merah.</p>
-    <span class="teks-merah">Ini juga teks merah.</span>
+    <h1>Selamat Datang di Santri Koding</h1>
+    <p>Ini adalah paragraf biasa dengan font yang nyaman dibaca.</p>
+    <p class="highlight">
+      Paragraf ini menggunakan background dan teks khusus.
+    </p>
   </body>
 </html>

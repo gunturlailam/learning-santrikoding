@@ -1,20 +1,32 @@
-/* Tag Selector */
-/* p{
-    color: blue;
-} */
-
-/* Class Selector */
-/* .teks-merah {
-    color: red;
-} */
-
-/* ID Selector */
-/* #judul-utama {
-    font-size: 32px;
-} */
-
-/* Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
+/* Color */
+/* p {
+    color: green;
 }
+
+h1 {
+    color: #3498db;
+} */
+
+/* Font */
+/* p {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 24px;
+}
+
+strong {
+    font-weight: bold;
+} */
+
+/* Background */
+/* div {
+    background-color: #f1f1f1;
+}
+
+body {
+    background-image: url('gambar.jpg');
+    background-size: cover;
+    background-repeat: no;
+} */
