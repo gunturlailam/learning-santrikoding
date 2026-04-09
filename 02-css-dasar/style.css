@@ -1,32 +1,25 @@
-/* Static (default) */
-div {
-    position: static;
+/* flex */
+.container {
+    display: flex;
 }
 
-/* Relative */
-.box {
-    position: relative;
-    top: 20px;
-    left: 10px;
+/* flex-direction */
+.container {
+     flex-direction: row; /* default: horizontal  */
+     flex-direction: column; /*  vertikal */
 }
 
-/* Absolute */
-.box {
-    position: absolute;
-    top: 50px;
-    left: 100px;
+/* justify-content */
+.container {
+    justify-content: center;
 }
 
-/* Fixed */
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* align-items */
+.container {
+    align-items: center;
 }
 
-/* Sticky */
-h2{
-    position: sticky;
-    top: 0;
-    background: white;
+/* gap */
+.container {
+    gap: 20px;
 }
