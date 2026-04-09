@@ -1,18 +1,21 @@
-/* Text-align */
+/* Display */
 p {
-    text-align: center;
+    display: block;
 }
 
-h1{
-    text-align: center;
+span {
+    display: inline;
 }
 
-/* Font-size */
-p{
-    font-style: italic;
+img {
+    display: inline-block;
 }
 
-/* Line Height */
-p{
-    line-height: 1.6;
+.menu {
+    display: none;
+}
+
+/* Visibility */
+h1 {
+    visibility:hidden ;
 }

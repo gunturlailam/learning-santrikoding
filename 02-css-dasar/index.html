@@ -3,37 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text Styling CSS</title>
+    <title>Display & Visibility</title>
   </head>
   <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #fafafa;
-      padding: 20px;
+    .kotak-block {
+      display: block;
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
     }
 
-    h1 {
-      text-align: center;
-      font-style: italic;
+    .kotak-inline {
+      display: inline;
+      background-color: lightgreen;
+      padding: 10px;
     }
 
-    p {
-      line-height: 1.8;
-      text-align: justify;
+    .kotak-inlineblock {
+      display: inline-block;
+      background-color: orange;
+      padding: 10px;
+      width: 100px;
     }
 
-    .catatan {
-      font-style: oblique;
-      text-align: right;
+    .hidden {
+      visibility: hidden;
+    }
+
+    .none {
+      display: none;
     }
   </style>
   <body>
-    <h1>Belajar CSS Menjadi Menyenangkan</h1>
-    <p>
-      Dengan CSS, kita bisa membuat teks terlihat jauh lebih enak dibaca.
-      Mengatur perataan, jarak antar baris, dan gaya huruf akan membantu
-      pengguna menikmati konten tanpa merasa lelah membaca.
-    </p>
-    <p class="catatan">Ditulis oleh Santri Koding</p>
+    <div class="kotak-block">Saya block</div>
+    <span class="kotak-inline">Saya inline</span>
+    <span class="kotak-inline">Saya juga inline</span>
+
+    <div class="kotak-inlineblock">Saya inline-block</div>
+
+    <h2 class="hidden">Judul ini disembunyikan (visibility: hidden)</h2>
+    <h2 class="none">Judul ini tidak tampil (display:none)</h2>
   </body>
 </html>
