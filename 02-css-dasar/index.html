@@ -3,25 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contoh Box Model</title>
+    <title>Text Styling CSS</title>
   </head>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: Georgia, serif;
+      background-color: #fafafa;
+      padding: 20px;
     }
 
-    .kotak {
-      background-color: #fff;
-      padding: 20px;
-      border: 2px solid #3498db;
-      margin: 30px auto;
-      width: 300px;
+    h1 {
+      text-align: center;
+      font-style: italic;
+    }
+
+    p {
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .catatan {
+      font-style: oblique;
+      text-align: right;
     }
   </style>
   <body>
-    <div class="kotak">
-      <p>Ini adalah contoh penggunaan box model dalam CSS.</p>
-    </div>
+    <h1>Belajar CSS Menjadi Menyenangkan</h1>
+    <p>
+      Dengan CSS, kita bisa membuat teks terlihat jauh lebih enak dibaca.
+      Mengatur perataan, jarak antar baris, dan gaya huruf akan membantu
+      pengguna menikmati konten tanpa merasa lelah membaca.
+    </p>
+    <p class="catatan">Ditulis oleh Santri Koding</p>
   </body>
 </html>
