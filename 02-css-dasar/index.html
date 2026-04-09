@@ -3,40 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media Query Responsive</title>
+    <title>Pseudo-class dan Pseudo-element</title>
   </head>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 20px;
+    a {
+      text-decoration: none;
+      color: blue;
     }
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    a:hover {
+      color: red;
     }
 
-    .box {
-      background-color: #3498db;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 8px;
+    a::after {
+      content: " 🔗";
+    }
+
+    input:focus {
+      border: 2px solid #3498db;
+    }
+
+    p::first-line {
       font-weight: bold;
     }
 
-    /* Media query untuk layar kecil */
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
+    p::first-letter {
+      font-size: 200%;
+      color: orange;
+    }
+
+    li:first-child {
+      color: green;
+    }
+
+    li:last-child {
+      color: purple;
     }
   </style>
   <body>
-    <h1>Layout Responsive dengan Media Query</h1>
-    <div class="container">Box 1</div>
-    <div class="container">Box 2</div>
-    <div class="container">Box 3</div>
+    <h1>Contoh Pseudo-class & Pseudo-element</h1>
+
+    <a href="#">Link Ini</a>
+
+    <p>
+      Ini adalah paragraf dengan pseudo-element yang menargetkan huruf dan baris
+      pertama.
+    </p>
+
+    <input type="text" placeholder="Ketik sesuatu..." />
+
+    <ul>
+      <li>Item pertama (first-child)</li>
+      <li>Item tengah</li>
+      <li>Item terakhir (last-child)</li>
+    </ul>
   </body>
 </html>
