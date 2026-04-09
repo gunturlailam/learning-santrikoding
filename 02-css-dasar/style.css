@@ -1,21 +1,32 @@
-/* Display */
-p {
-    display: block;
+/* Static (default) */
+div {
+    position: static;
 }
 
-span {
-    display: inline;
+/* Relative */
+.box {
+    position: relative;
+    top: 20px;
+    left: 10px;
 }
 
-img {
-    display: inline-block;
+/* Absolute */
+.box {
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
 
+/* Fixed */
 .menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-/* Visibility */
-h1 {
-    visibility:hidden ;
+/* Sticky */
+h2{
+    position: sticky;
+    top: 0;
+    background: white;
 }
