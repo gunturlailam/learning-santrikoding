@@ -1,36 +1,10 @@
-/* Transition */
+/* CSS Variables */
+:root {
+    --warna-utama: #3498db;
+    --padding-standar: 16px;
+}
+
 .button {
-    background-color: blue;
-    transition: background-color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: red;
-}
-
-/* Animation */
-@keyframes gerak {
-    from {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-    to{
-        transform: translateX(200px);
-        -webkit-transform: translateX(200px);
-        -moz-transform: translateX(200px);
-        -ms-transform: translateX(200px);
-        -o-transform: translateX(200px);
-    }   
-}
-
-.box {
-    animation: gerak 2s ease-in-out infinite;
-    -webkit-animation: gerak 2s ease-in-out infinite;
+    background-color: var(--warna-utama);
+    padding: var(--padding-standar);
 }

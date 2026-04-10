@@ -3,44 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transition & Animation Dasar</title>
+    <title>CSS Variables</title>
   </head>
   <style>
+    :root {
+      --warna-utama: #2ecc71;
+      --warna-teks: #ffffff;
+      --font-utama: "Segoe UI", sans-serif;
+      --padding-besar: 24px;
+    }
+
+    body {
+      font-family: var(--font-utama);
+      background-color: #f4f4f4;
+      padding: var(--padding-besar);
+    }
+
     .button {
-      background-color: royalblue;
-      color: white;
-      padding: 12px 24px;
+      background-color: var(--warna-utama);
+      color: var(--warna-teks);
       border: none;
-      border-radius: 8px;
+      padding: 12px 20px;
       font-size: 16px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
 
-    .button:hover {
-      background-color: crimson;
-    }
-
-    .box {
-      width: 100px;
-      height: 100px;
-      background-color: teal;
-      margin-top: 40px;
-      animation: goyang 1s ease-in-out infinite alternate;
-    }
-
-    @keyframes goyang {
-      0% {
-        transform: rotate(-5deg);
-      }
-      100% {
-        transform: rotate(5deg);
-      }
+    .card {
+      background-color: var(--warna-utama);
+      padding: var(--padding-besar);
+      color: 🇻ar(--warna-teks);
+      border-radius: 8px;
+      margin-top: 20px;
     }
   </style>
   <body>
-    <h1>Contoh Transition & Animation</h1>
-    <button class="button">Hover Saya</button>
-    <div class="box"></div>
+    <button class="button">Tombol</button>
+
+    <div class="card">
+      <h2>Kartu Info</h2>
+      <p>
+        Ini adalah contoh penggunaan CSS Variables untuk mengatur warna dan
+        ukuran secara konsisten.
+      </p>
+    </div>
   </body>
 </html>
