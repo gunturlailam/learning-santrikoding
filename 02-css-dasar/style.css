@@ -1,18 +1,35 @@
-/* Box Shadow */
+/* Best Practice CSS */
+
+/* 1. Gunakan Struktur dan Urutan yang Konsisten */
 .card {
-    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
 }
 
-/* Teks Shadow */
-h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.5);
+/* 2. Gunakan Class */
+/* Hindari */
+#main-title {
+    font-size: 32px;
 }
 
-.text-glow {
-    text-shadow: 0 0 8px #00ffcc;
+/* Disarankan */
+.title-besar {
+    font-size: 32px;
 }
 
-/* Multi Shadow */
-h1{
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+/* 3. Gunakan CSS Variables */
+:root {
+    --warna-primer: #3498db;
+    --padding-default: 1rem;
 }
+
+/* 4.Gunakan nama kelas yang jelas */
+/* Hindari */
+.hijau, .box1
+
+/* Disarankan */
+.kartu-produk, .tombol-login
