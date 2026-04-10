@@ -1,10 +1,18 @@
-/* CSS Variables */
-:root {
-    --warna-utama: #3498db;
-    --padding-standar: 16px;
+/* Box Shadow */
+.card {
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button {
-    background-color: var(--warna-utama);
-    padding: var(--padding-standar);
+/* Teks Shadow */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.5);
+}
+
+.text-glow {
+    text-shadow: 0 0 8px #00ffcc;
+}
+
+/* Multi Shadow */
+h1{
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
 }
