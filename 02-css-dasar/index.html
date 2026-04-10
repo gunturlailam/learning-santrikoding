@@ -3,53 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit Ukuran CSS</title>
+    <title>Contoh Z-Index</title>
   </head>
   <style>
-    html {
-      font-size: 16px;
+    .container {
+      position: relative;
+      height: 200px;
+      background-color: #f1f1f1;
     }
 
-    .kotak-px {
-      width: 200px;
-      height: 100px;
+    .box1,
+    .box2 {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 25px;
+    }
+
+    .box1 {
+      left: 50px;
       background-color: lightblue;
-      margin-bottom: 10px;
+      z-index: 1;
     }
 
-    .kotak-persen {
-      width: 50%;
-      height: 100px;
-      background-color: lightgreen;
-      margin-bottom: 10px;
-    }
-
-    .kotak-em {
-      font-size: 1.5em;
-      padding: 1em;
-      background-color: salmon;
-      margin-bottom: 10px;
-    }
-
-    .kotak-rem {
-      font-size: 2rem;
-      padding: 1rem;
-      background-color: gold;
-      margin-bottom: 10px;
-    }
-
-    .kotak-viewport {
-      width: 100vw;
-      height: 20vh;
-      background-color: orchid;
-      margin-bottom: 10px;
+    .box2 {
+      left: 100px;
+      background-color: tomato;
+      z-index: 10;
     }
   </style>
   <body>
-    <div class="kotak-px">Kotak dengan px</div>
-    <div class="kotak-persen">Kotak dengan % (50% lebar)</div>
-    <div class="kotak-em">Kotak dengan em (relatif induk)</div>
-    <div class="kotak-rem">Kotak dengan rem (relatif root)</div>
-    <div class="kotak-viewport">Kotak dengan vw dan vh</div>
+    <h1>Contoh Layering dengan z-index</h1>
+    <div class="container">
+      <div class="box1">Kotak 1 (z-index: 1)</div>
+      <div class="box2">Kotak 2 (z-index: 10)</div>
+    </div>
   </body>
 </html>
