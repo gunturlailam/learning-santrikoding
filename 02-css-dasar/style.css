@@ -1,14 +1,30 @@
-/* pseudo class */
-a:hover {
-    color: red;
+/* px (pixel) */
+div {
+    width: 200px;
+    font-size: 16px;
 }
 
-/* pseudo-element */
-p::first-line {
-    font-weight: bold;
+/* % (persen) */
+div {
+    width: 50%;
 }
 
-/* gabungan element+class */
-a:hover::after {
-    content: " 🔗";
+/* em */
+p {
+    font-size: 1.5em;
+}
+
+/* rem (root em) */
+html {
+    font-size: 16px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* vw (viewport width) & vh(viewport height) */
+.hero {
+    width: 100vw;
+    height: 100vh;
 }

@@ -3,59 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pseudo-class dan Pseudo-element</title>
+    <title>Unit Ukuran CSS</title>
   </head>
   <style>
-    a {
-      text-decoration: none;
-      color: blue;
+    html {
+      font-size: 16px;
     }
 
-    a:hover {
-      color: red;
+    .kotak-px {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin-bottom: 10px;
     }
 
-    a::after {
-      content: " 🔗";
+    .kotak-persen {
+      width: 50%;
+      height: 100px;
+      background-color: lightgreen;
+      margin-bottom: 10px;
     }
 
-    input:focus {
-      border: 2px solid #3498db;
+    .kotak-em {
+      font-size: 1.5em;
+      padding: 1em;
+      background-color: salmon;
+      margin-bottom: 10px;
     }
 
-    p::first-line {
-      font-weight: bold;
+    .kotak-rem {
+      font-size: 2rem;
+      padding: 1rem;
+      background-color: gold;
+      margin-bottom: 10px;
     }
 
-    p::first-letter {
-      font-size: 200%;
-      color: orange;
-    }
-
-    li:first-child {
-      color: green;
-    }
-
-    li:last-child {
-      color: purple;
+    .kotak-viewport {
+      width: 100vw;
+      height: 20vh;
+      background-color: orchid;
+      margin-bottom: 10px;
     }
   </style>
   <body>
-    <h1>Contoh Pseudo-class & Pseudo-element</h1>
-
-    <a href="#">Link Ini</a>
-
-    <p>
-      Ini adalah paragraf dengan pseudo-element yang menargetkan huruf dan baris
-      pertama.
-    </p>
-
-    <input type="text" placeholder="Ketik sesuatu..." />
-
-    <ul>
-      <li>Item pertama (first-child)</li>
-      <li>Item tengah</li>
-      <li>Item terakhir (last-child)</li>
-    </ul>
+    <div class="kotak-px">Kotak dengan px</div>
+    <div class="kotak-persen">Kotak dengan % (50% lebar)</div>
+    <div class="kotak-em">Kotak dengan em (relatif induk)</div>
+    <div class="kotak-rem">Kotak dengan rem (relatif root)</div>
+    <div class="kotak-viewport">Kotak dengan vw dan vh</div>
   </body>
 </html>
