@@ -1,53 +1,38 @@
-// 1. Tipe Data Primitive
-// String
-let nama = "Guntur Lailam Yuro"
+// 1. Operator Aritmatika
 
-console.log(nama)
+// let a = 10
+// let b = 3
 
-// Number
-let umur = 24;
+// console.log(a + b) // 13
+// console.log(a % b) // 1
+// console.log(a ** b) // 1000
 
-let tinggi = 183;
+// 2. Operator Perbandingan
+// console.log(5 == '5') // true
+// console.log(5 === '5') // false
+// console.log(5 ===! 5) // false
 
-// Boolean
-let isOnline = true
-let isLogin = false
+// 3. Operator Logika
+// let x = true
+// let y = false
 
-// Undefined
-let alamat
-console.log(alamat)
+// console.log(x && y) // false
+// console.log(x || y) // true
+// console.log(!x) // false
 
-// Null
-let data = null
+// 4. Operator Penugasan
+// let angka = 10
+// angka += 5 // angka = angka + 5
+// console.log(angka) // 15
 
-// Symbol
-let id = Symbol('id')
+// 5. Operator typeof
+// console.log(typeof "Hello") // string
+// console.log(typeof 123) // number
+// console.log(typeof true) // boolean
+// console.log(typeof {}) // object 
 
-// BigInt (ES11)
-let angkaBesar = 123456789012345678901234567890n
+// 6. Operator Ternary
+let umur = 18
+let status = umur >= 17 ? "Dewasa" : "Anak-anak"
 
-
-// 2. Tipe Data Non-Primitive
-// Object
-let mahasiswa = {
-    nama: "Guntur Lailam Yuro",
-    umur: 21,
-    jurusan: "Sistem Informasi"
-}
-
-// Array
-let buah = ["Apel", "Jeruk", "Mangga"]
-
-// Function
-function sapa() {
-    console.log("Halo semuanya!")
-}
-
-// Mengetahui Tipe Data
-console.log(typeof "Hello") // string
-console.log(typeof 100) // number
-console.log(typeof true) // boolean
-console.log(typeof {}) // object
-console.log(typeof []) // object (array tetap dianggap object)
-console.log(typeof null) // object (ini bug lama di JavaScript)
-console.log(typeof function(){}) // function
+console.log(status) // dewasa
