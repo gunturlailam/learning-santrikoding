@@ -1,38 +1,89 @@
-// 1. Operator Aritmatika
+// 1. Percabangan (Conditional Statements)
+// If Statement
+// let umur = 20;
 
-// let a = 10
-// let b = 3
+// if (umur >= 18) {
+//     console.log("Kamu sudah dewasa.")
+// }
 
-// console.log(a + b) // 13
-// console.log(a % b) // 1
-// console.log(a ** b) // 1000
+// If-Else Statement
+// let nilai = 70
 
-// 2. Operator Perbandingan
-// console.log(5 == '5') // true
-// console.log(5 === '5') // false
-// console.log(5 ===! 5) // false
+// if (nilai >= 75) {
+//     console.log("Lulus")
+// } else {
+//     console.log("Tidak Lulus")
+// }
 
-// 3. Operator Logika
-// let x = true
-// let y = false
+// if-else if-else statement
+// let skor = 85
 
-// console.log(x && y) // false
-// console.log(x || y) // true
-// console.log(!x) // false
+// if (skor >= 90) {
+//     console.log("Nilai A")
+// } else if (skor >= 80) {
+//     console.log("Nilai B")
+// } else if (skor >= 70) {
+//     console.log("Nilai C")
+// } else {
+//     console.log("Nilai D")
+// }
 
-// 4. Operator Penugasan
-// let angka = 10
-// angka += 5 // angka = angka + 5
-// console.log(angka) // 15
+// 2. Switch Statement
+// let hari = 3
+// let namaHari
 
-// 5. Operator typeof
-// console.log(typeof "Hello") // string
-// console.log(typeof 123) // number
-// console.log(typeof true) // boolean
-// console.log(typeof {}) // object 
+// switch (hari) {
+//     case 1:
+//         namaHari = "Senin"
+//         break
+//     case 2:
+//         namaHari = "Selasa"
+//         break
+//     case 3:
+//         namaHari = "Rabu"
+//         break
+//     default:
+//         namaHari = "Hari tidak valid"
+// }
 
-// 6. Operator Ternary
-let umur = 18
-let status = umur >= 17 ? "Dewasa" : "Anak-anak"
 
-console.log(status) // dewasa
+// console.log(namaHari)
+
+// 3. Perulangan (Loops)
+// For Loop
+// for (let i = 1; i <= 5; i++) {
+//     console.log("Iterasi ke-" + i)
+// }
+
+// While Loop
+// let i = 1
+
+// while (i <= 5) {
+//     console.log("Angka " + i)
+//     i++
+// }
+
+// Do-While Loop
+// let j = 1
+
+// do {
+//     console.log("Nomor " + j)
+//     j++
+// } while (j <= 5)
+
+// 4. Break dan Continue
+// Continue
+// for (let i = 1; i <= 5; i++){
+// if(i === 3) {
+//     continue
+//     }
+//     console.log(i)
+// }
+
+// Break
+for (let i = 1; i <= 5; i++){
+if(i === 4) {
+    break
+    }
+    console.log(i)
+}
