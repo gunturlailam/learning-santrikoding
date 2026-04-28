@@ -1,89 +1,41 @@
-// 1. Percabangan (Conditional Statements)
-// If Statement
-// let umur = 20;
-
-// if (umur >= 18) {
-//     console.log("Kamu sudah dewasa.")
+// Function Sederhana
+// function sayHello () {
+//     console.log("Hello World!")
 // }
 
-// If-Else Statement
-// let nilai = 70
+// sayHello()
 
-// if (nilai >= 75) {
-//     console.log("Lulus")
-// } else {
-//     console.log("Tidak Lulus")
+// Function Parameter
+// function greet(nama) {
+//     console.log("Halo, " + nama + "!")
 // }
 
-// if-else if-else statement
-// let skor = 85
+// greet("Dedy")
+// greet("Fadly")
 
-// if (skor >= 90) {
-//     console.log("Nilai A")
-// } else if (skor >= 80) {
-//     console.log("Nilai B")
-// } else if (skor >= 70) {
-//     console.log("Nilai C")
-// } else {
-//     console.log("Nilai D")
+// Function Return Value
+// function tambah(a, b) {
+//     return a + b
 // }
 
-// 2. Switch Statement
-// let hari = 3
-// let namaHari
+// let hasil = tambah(8, 2)
+// console.log(hasil)
 
-// switch (hari) {
-//     case 1:
-//         namaHari = "Senin"
-//         break
-//     case 2:
-//         namaHari = "Selasa"
-//         break
-//     case 3:
-//         namaHari = "Rabu"
-//         break
-//     default:
-//         namaHari = "Hari tidak valid"
+// Function Expression
+// const kali = function(a, b){
+//     return a * b
 // }
 
+// console.log(kali(8,2))
 
-// console.log(namaHari)
-
-// 3. Perulangan (Loops)
-// For Loop
-// for (let i = 1; i <= 5; i++) {
-//     console.log("Iterasi ke-" + i)
-// }
-
-// While Loop
-// let i = 1
-
-// while (i <= 5) {
-//     console.log("Angka " + i)
-//     i++
-// }
-
-// Do-While Loop
-// let j = 1
-
-// do {
-//     console.log("Nomor " + j)
-//     j++
-// } while (j <= 5)
-
-// 4. Break dan Continue
-// Continue
-// for (let i = 1; i <= 5; i++){
-// if(i === 3) {
-//     continue
-//     }
-//     console.log(i)
-// }
-
-// Break
-for (let i = 1; i <= 5; i++){
-if(i === 4) {
-    break
-    }
-    console.log(i)
+// Contoh Lengkap
+function hitungLuasPersegi(sisi) {
+    return sisi * sisi
 }
+
+const hitungKelilingPersegi = function(sisi) {
+    return 4 * sisi
+}
+
+console.log(hitungLuasPersegi(6))
+console.log(hitungKelilingPersegi(6))
