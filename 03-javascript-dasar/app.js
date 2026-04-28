@@ -1,41 +1,35 @@
-// Function Sederhana
-// function sayHello () {
+// Arrow Function
+// const sayHello = () => {
 //     console.log("Hello World!")
 // }
 
 // sayHello()
 
-// Function Parameter
-// function greet(nama) {
-//     console.log("Halo, " + nama + "!")
+// Arrow Function Parameter
+// const greet = (nama) => {
+//     console.log("Hello, " + nama + "!")
 // }
 
-// greet("Dedy")
-// greet("Fadly")
+// greet("Guntur")
 
-// Function Return Value
-// function tambah(a, b) {
-//     return a + b
+// Arrow Function Parameter
+// const helloWorld = () => {
+//     console.log("Hello World!")
 // }
 
-// let hasil = tambah(8, 2)
-// console.log(hasil)
+// helloWorld()
 
-// Function Expression
-// const kali = function(a, b){
-//     return a * b
+// Arrow Function Satu Paramater
+// const sapa = nama => {
+//     console.log("Hai, " + nama)
 // }
 
-// console.log(kali(8,2))
+// sapa("Guntur")
 
-// Contoh Lengkap
-function hitungLuasPersegi(sisi) {
-    return sisi * sisi
-}
+// Arrow Function Mengembalikan Object
+const buatUser = (nama, umur) ({
+    nama: nama,
+    umur: umur
+})
 
-const hitungKelilingPersegi = function(sisi) {
-    return 4 * sisi
-}
-
-console.log(hitungLuasPersegi(6))
-console.log(hitungKelilingPersegi(6))
+console.log(buatUser("Guntur", 24))
